@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashes Sharma | Business, Media & Digital Operations</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body class="bg-slate-950 text-slate-100 font-sans selection:bg-blue-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center font-black text-xl tracking-tighter">
+                        AS
+                    </div>
+
+                    <span class="text-xl font-bold tracking-tighter uppercase">
+                        Ashes <span class="text-blue-500">Sharma</span>
+                    </span>
+                </div>
+
+                <div class="hidden md:flex space-x-8 text-[11px] font-bold uppercase tracking-[0.2em]">
+                    <a href="#home" class="nav-link text-blue-500">Home</a>
+                    <a href="#portfolio" class="nav-link hover:text-blue-500 transition">Portfolio</a>
+                    <a href="#experience" class="nav-link hover:text-blue-500 transition">Experience</a>
+                    <a href="#projects" class="nav-link hover:text-blue-500 transition">Projects</a>
+                    <a href="#skills" class="nav-link hover:text-blue-500 transition">Skills</a>
+                    <a href="#contact" class="nav-link hover:text-blue-500 transition">Contact</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-100 p-2 outline-none">
+                        <i class="fa-solid fa-bars-staggered text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-slate-900 border-b border-slate-800 flex flex-col p-6 space-y-4 shadow-2xl transition-all">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+            <a href="#experience" class="mobile-nav-link">Experience</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/50 via-slate-950/85 to-slate-950 z-10"></div>
+            <img src="Media and Files/Photos/FL Body.JPG" class="w-full h-full object-cover" alt="Ashes Sharma Portfolio Hero">
+        </div>
+
+        <div class="relative z-20 text-center px-4 max-w-5xl">
+            <p class="text-blue-500 text-xs md:text-sm font-black uppercase tracking-[0.35em] mb-5">
+                Business Operations • Digital Systems • Media Strategy
+            </p>
+
+            <h1 class="text-5xl md:text-8xl font-black mb-5 tracking-tighter italic uppercase">
+                Ashes Sharma
+            </h1>
+
+            <h2 class="text-xl md:text-3xl text-slate-200 font-bold mb-6 tracking-tight uppercase">
+                General Business Student Turning Customer Experience, CRM, and Media Into Better Digital Workflows
+            </h2>
+
+            <p class="text-slate-400 text-lg mb-10 max-w-3xl mx-auto leading-relaxed font-light">
+                I combine AppleCare customer support experience, website and CRM development, short-form media production, 
+                and data-driven operations projects to build clean, useful, and audience-focused digital experiences.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto mb-10">
+                <div class="hero-stat">
+                    <span>94%</span>
+                    <p>User Satisfaction</p>
+                </div>
+
+                <div class="hero-stat">
+                    <span>85%+</span>
+                    <p>Cases Resolved Independently</p>
+                </div>
+
+                <div class="hero-stat">
+                    <span>70%</span>
+                    <p>Operational Cost Reduction</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#experience" class="px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full transition-all transform hover:scale-105 uppercase tracking-widest text-xs">
+                    View Experience
+                </a>
+
+                <a href="#portfolio" class="px-10 py-4 border border-slate-700 hover:bg-slate-800 text-white font-bold rounded-full transition-all uppercase tracking-widest text-xs">
+                    View Media Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <p class="section-kicker">Creative Portfolio</p>
+                <h2 class="text-4xl font-bold mb-4 uppercase tracking-tighter">Media Work</h2>
+
+                <p class="text-slate-400 max-w-2xl mx-auto">
+                    A visual archive of automotive photography, FormulaSAE content, travel edits, and short-form social media projects.
+                </p>
+
+                <div class="hidden flex flex-wrap font-bold justify-center gap-2 mt-8 transition-all" id="portfolio-filters">
+                    <button data-filter="all" class="filter-btn active">All Work</button>
+                    <button data-filter="photos" class="filter-btn">Photography</button>
+                    <button data-filter="videos" class="filter-btn">Videography</button>
+                    <button data-filter="brand" class="filter-btn">Brand Style</button>
+                </div>
+            </div>
+
+            <div id="preview-container">
+                <h3 class="portfolio-subhead">Featured Photography</h3>
+                <div id="photo-preview-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16"></div>
+
+                <h3 class="portfolio-subhead">Featured Videography</h3>
+                <div id="video-preview-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16"></div>
+            </div>
+
+            <div id="portfolio-grid" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+
+            <div class="text-center mt-12">
+                <button id="load-more" class="px-10 py-4 bg-slate-900 border border-slate-800 rounded-full hover:border-blue-500 transition-all text-xs font-bold uppercase tracking-widest group">
+                    View Full Archive
+                    <i class="fa-solid fa-chevron-down ml-2 group-hover:translate-y-1 transition-transform"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-24 bg-slate-950 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-16">
+                <p class="section-kicker">Resume Experience</p>
+                <h2 class="text-4xl font-black uppercase tracking-tighter">Professional Experience</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-6">
+                <div class="experience-card">
+                    <p class="experience-date">May 2023 - Present</p>
+                    <h3>Apple Inc.</h3>
+                    <h4>At-Home Advisor</h4>
+
+                    <ul>
+                        <li>Analyze high-volume customer interactions to resolve complex Apple ecosystem issues.</li>
+                        <li>Maintain a 94% user satisfaction rating with 100% quality compliance across 100+ internal evaluations.</li>
+                        <li>Independently resolve over 85% of customer cases, reducing escalation rates and improving efficiency.</li>
+                        <li>Coordinate with AppleCare teams to document cases and deliver a seamless user experience.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <p class="experience-date">Aug 2025 - Dec 2025</p>
+                    <h3>Center for the Study of the Force Majeure</h3>
+                    <h4>Website & CRM Development Project Coordinator</h4>
+
+                    <ul>
+                        <li>Led the website transition from Squarespace to Wix while reducing operational costs by 70%.</li>
+                        <li>Built CRM-integrated workflows for contact segmentation and automated email confirmations.</li>
+                        <li>Designed communication pipelines and workflow diagrams using Adobe Illustrator.</li>
+                        <li>Conducted QA testing for responsiveness, accessibility, and platform performance.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <p class="experience-date">Dec 2024 - June 2025</p>
+                    <h3>FormulaSAE - San Jose State University</h3>
+                    <h4>Media / Video Apprenticeship</h4>
+
+                    <ul>
+                        <li>Edited short-form social content using CapCut, Canva, and Adobe tools.</li>
+                        <li>Turned raw event footage, build process clips, and competition highlights into mobile-friendly content.</li>
+                        <li>Collaborated with the media team to improve viewer retention through visual storytelling.</li>
+                        <li>Used AI tools for content ideation, captions, and workflow efficiency.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-24 bg-slate-950 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-16">
+                <p class="section-kicker">Business + Analytics</p>
+                <h2 class="text-4xl font-black uppercase tracking-tighter">Project Experience</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <p class="experience-date">Sep 2024 - Dec 2024</p>
+                    <h3>Delivery Performance Optimization Project</h3>
+
+                    <p>
+                        Analyzed 1,000+ orders using Excel and Python to identify delivery delay patterns, perform SPC analysis, 
+                        and recommend a more efficient logistics workflow.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Excel</span>
+                        <span>Python</span>
+                        <span>SPC</span>
+                        <span>Root-Cause Analysis</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+
+                    <p class="experience-date">Aug 2023 - Dec 2023</p>
+                    <h3>International Supply Chain Strategy - ÉnergieRich</h3>
+
+                    <p>
+                        Assisted in developing a cost-effective international supply chain strategy for renewable energy distribution 
+                        in developing communities.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Supply Chain</span>
+                        <span>Logistics</span>
+                        <span>Strategy</span>
+                        <span>Renewable Energy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-24 bg-slate-950 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-20">
+            <div>
+                <p class="section-kicker">Education</p>
+                <h2 class="text-4xl font-black uppercase tracking-tighter mb-8">
+                    San Jose State University
+                </h2>
+
+                <div class="education-card">
+                    <p class="experience-date">Expected Graduation: Summer 2026</p>
+                    <h3>Bachelor of Science in General Business</h3>
+                    <p>
+                        Focused on business operations, digital systems, customer experience, analytics, 
+                        and practical project execution across media, CRM, and workflow improvement.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <p class="section-kicker">Tools + Strengths</p>
+                <h2 class="text-4xl font-black uppercase tracking-tighter mb-8">
+                    Skill Stack
+                </h2>
+
+                <div class="skill-group">
+                    <h3>Media</h3>
+                    <div class="tool-grid">
+                        <div class="tool-tag">CapCut</div>
+                        <div class="tool-tag">Canva</div>
+                        <div class="tool-tag">Adobe Creative Cloud</div>
+                        <div class="tool-tag">Final Cut Pro</div>
+                        <div class="tool-tag">TikTok / Reels</div>
+                        <div class="tool-tag">Captions</div>
+                        <div class="tool-tag">Social Media</div>
+                        <div class="tool-tag">Visual Storytelling</div>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Technical</h3>
+                    <div class="tool-grid">
+                        <div class="tool-tag">SEO</div>
+                        <div class="tool-tag">UGC-Style Content</div>
+                        <div class="tool-tag">CRM</div>
+                        <div class="tool-tag">Python</div>
+                        <div class="tool-tag">HTML</div>
+                        <div class="tool-tag">MS Office</div>
+                        <div class="tool-tag">Apple Apps</div>
+                        <div class="tool-tag">Wix</div>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Interpersonal</h3>
+                    <div class="tool-grid">
+                        <div class="tool-tag">Cross-Functional</div>
+                        <div class="tool-tag">Fast-Paced</div>
+                        <div class="tool-tag">Detail-Oriented</div>
+                        <div class="tool-tag">Quality-Oriented</div>
+                        <div class="tool-tag">Data-Driven</div>
+                        <div class="tool-tag">Customer-Focused</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-blue-600">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-black mb-6 uppercase tracking-tighter">Let's Connect</h2>
+
+            <p class="text-blue-100 text-lg mb-12 font-light">
+                Open to business operations, digital coordination, CRM, media, and customer experience roles.
+            </p>
+
+            <div class="contact-card">
+                <a href="mailto:sharmaashes04@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    sharmaashes04@gmail.com
+                </a>
+
+                <a href="tel:5106608030">
+                    <i class="fa-solid fa-phone"></i>
+                    (510) 660-8030
+                </a>
+
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                </a>
+
+                <a href="#portfolio">
+                    <i class="fa-solid fa-camera"></i>
+                    Media Portfolio
+                </a>
+            </div>
+
+            <form id="contact-form" class="bg-slate-950 p-8 md:p-12 rounded-3xl text-left shadow-2xl mt-12">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 mb-2 uppercase">Full Name</label>
+                        <input type="text" required class="form-input">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 mb-2 uppercase">Project / Role Inquiry</label>
+                        <select class="form-input">
+                            <option>Business Operations</option>
+                            <option>CRM / Website Project</option>
+                            <option>Media Editing</option>
+                            <option>Customer Experience</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <label class="block text-xs font-bold text-slate-500 mb-2 uppercase">Message</label>
+                    <textarea rows="4" required class="form-input"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 py-4 rounded-xl font-bold uppercase tracking-widest transition-all">
+                    Submit Inquiry
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-950 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="font-black text-xl uppercase italic">
+                Ashes <span class="text-blue-500">Sharma</span>
+            </div>
+
+            <div class="flex gap-8">
+                <a href="#" class="text-slate-400 hover:text-white transition"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                <a href="#" class="text-slate-400 hover:text-white transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+                <a href="#" class="text-slate-400 hover:text-white transition"><i class="fa-brands fa-tiktok text-xl"></i></a>
+                <a href="#" class="text-slate-400 hover:text-white transition"><i class="fa-brands fa-youtube text-xl"></i></a>
+            </div>
+
+            <p class="text-slate-500 text-xs uppercase tracking-widest">© 2026 Ashes Sharma</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 z-[100] bg-slate-950/98 hidden items-center justify-center p-4 backdrop-blur-sm">
+        <button id="close-modal" class="absolute top-8 right-8 text-white/50 hover:text-white text-5xl">
+            &times;
+        </button>
+
+        <div class="max-w-6xl w-full grid md:grid-cols-2 gap-10">
+            <div id="modal-media" class="aspect-[4/5] bg-slate-900 rounded-xl overflow-hidden shadow-2xl border border-white/5"></div>
+
+            <div class="flex flex-col justify-center">
+                <h3 id="modal-title" class="text-4xl font-bold mb-4 uppercase italic tracking-tighter">Project Title</h3>
+                <p id="modal-type" class="text-blue-500 mb-8 uppercase tracking-[0.3em] font-black text-xs">Category</p>
+                <p id="modal-desc" class="text-slate-400 leading-relaxed mb-8 font-light">Description here...</p>
+
+                <div class="grid grid-cols-2 gap-4 border-t border-slate-800 pt-8">
+                    <div>
+                        <p class="text-slate-500 text-[10px] uppercase font-bold">Tools Used</p>
+                        <p id="modal-tools" class="text-sm">Premiere, PS</p>
+                    </div>
+
+                    <div>
+                        <p class="text-slate-500 text-[10px] uppercase font-bold">Format</p>
+                        <p id="modal-format" class="text-sm">Vertical</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
